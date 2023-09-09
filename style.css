@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+    } 
+.logo{
+    display: flex;
+    margin-right: 170px;
+}
+.logoP{
+    height: 70px;
+    width: 70px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    }
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    }
+nav ul li a:hover{
+    color: rgb(153, 153, 226);
+    font-size: 1.04rem;
+    }
+main hr{
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+    }
+.purple{
+    color: rgb(170, 107, 228);
+    }
+#element{
+    color: rgb(170, 107, 228);
+    }
+.logo .left{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+    }
+.firstSection > div{
+    width: 30%;
+    }
+
+.leftSection{
+    font-size: 2rem;
+    }
+.leftSection .btn{
+    position: relative;
+    padding: 2px;
+    background: #1e2167;
+    color: white;
+    border: none;
+    height: 25px;
+    width: 125px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    }
+    .leftSection .btn:hover{
+        background-color: orange;
+    }
+.leftSection .button{
+    padding: 50px 0;
+}
+.rightSection{
+    width: 34px;
+    }
+.rightSection img{
+    width: 80%;
+    margin: 50px 0;
+    }
+
+.text-gray{
+    color: gray;
+    }
+
+.secondSection h1{
+    font-size: 1.9rem;
+    }
+ 
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    }
+.secondSection .box{
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vert{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.vert-title{
+    left: -1px;
+    top: 75px;
+    width: 150px;
+    position: relative;
+}
+.pro1-det{
+    position: relative;
+    top: 90px;
+    width: 100px;
+    font-size: 12px;
+    color: white;
+}
+.org{
+    position: relative;
+    top: 80px;
+    font-size: 14px;
+}
+.str{
+    color: rgb(0, 81, 255);
+}
+.str1{
+    color: rgb(234, 0, 255);
+}
+.footer{
+    height: 160px;
+    background-color: rgb(18, 18, 62);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row{
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+.about{
+    position: relative;
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 400px;
+    background: rgb(40, 40, 104);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 20px;
+}
+.intro{
+    color: black;
+    margin-left: 125px;
+    margin-top: -20px;
+    font-size: x-large;
+}
+.about p{
+    text-align: center;
+    font-size: 15px;
+    color: #e3d9d9;
+    margin-top: 20px;
+}
+.about button{
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    background-color: #008cff;
+    border: none;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.about button:hover{
+    background: orange;
+}
+.contact p{
+    margin-top: 5px;
+}
+.skills-box{
+    margin: 10px;
+}
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.skills-list span{
+    font-size: 14px;
+    background: #1107c9;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+.skills-header h3{
+    color: black;
+    margin-top: -10px;
+}
+.container{
+    width: 100%;
+    background-color: rgb(5, 5, 63);
+    width: 600px;
+    height: 20px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+.skills{
+    text-align: right;
+    color: white;
+    border-radius: 8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.skills-name{
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.java{
+    width: 65%;
+    background-color: orange;
+    height: 20px;
+}
+.python{
+    width: 45%;
+    background-color: red;
+    height: 20px;
+}
+.oops{
+    width: 80%;
+    background-color: rgb(20, 175, 236);
+    height: 20px;
+}
+.html{
+    width: 80%;
+    background-color: rgb(14, 160, 14);
+    height: 20px;
+}
+.css{
+    width: 80%;
+    background-color: rgb(209, 14, 141);
+    height: 20px;
+}
+.javascript{
+    width: 60%;
+    background-color: orangered;
+    height: 20px;
+}
+.contact{
+    display: flex;
+    height: 300px;
+    width: 100%;
+}
+.contact-box{
+    height: 250px;
+    width: 500px;
+    background-color: #090f33;
+    margin-left: -300px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+/* .contact-bo1{
+    height: 250px;
+    width: 500px;
+    background-color: #e3d9d9;
+} */
+.photo{
+    height: 120px;
+    width: 100px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 200px;
+    margin-top: -30px;
+}
+.react{
+    width: 55%;
+    background-color: red;
+    height: 20px;
+}
+
+.social{
+    font-size: 1.5rem;
+    display: inline;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+.email{
+    margin-left: 75px;
+    margin-top: 40px;
+}
+.contact-box a{
+    text-decoration: none;
+    color: white;
+}
+.liLogo1{
+    width: 20px;
+    height: 20px;
+    margin-bottom: -7px;
+    margin-right: 7px;
+}
+.liLogo2{
+    width: 35px;
+    height: 35px;
+    margin-bottom: -14px;
+    margin-left: -8px;
+    margin-right: 7px;
+    background-color: #090f33;
+}
+.liLogo3{
+    width: 25px;
+    height: 25px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+.liLogo:hover{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+.liLogo4{
+    width: 25px;
+    height: 25px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #090f33;
+}
+.social a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.footer .right{
+    font-size: 1rem;
+}
+
