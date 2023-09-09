@@ -1,1 +1,1 @@
-# Calculator.github.io
+# Education-Landing-Page.github.io

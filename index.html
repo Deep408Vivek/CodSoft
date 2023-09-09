@@ -3,36 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/abs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpoacy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    <div class="calc-box">
-        <h2>Calculator</h2>
-        <input class="input" type="text" id="result" readonly>
-        <div class="buttons">
-            <button class="btn" style="color: hsl(13, 100%, 50%);" onclick="clearResult()">C</button>
-            <button class="btn" style="color: cyan;" onclick="appendToResult('%')">%</button>
-            <button class="btn" style="color: hsl(13, 100%, 50%);" onclick="deleteLast()">DEL</button>
-            <button class="btn" style="color: cyan;" onclick="appendToResult('/')">/</button>
-            <button class="btn" onclick="appendToResult('7')">7</button>
-            <button class="btn" onclick="appendToResult('8')">8</button>
-            <button class="btn" onclick="appendToResult('9')">9</button>
-            <button class="btn" style="color: cyan;" onclick="appendToResult('*')">x</button>
-            <button class="btn" onclick="appendToResult('4')">4</button>
-            <button class="btn" onclick="appendToResult('5')">5</button>
-            <button class="btn" onclick="appendToResult('6')">6</button>
-            <button class="btn" style="color: cyan;" onclick="appendToResult('-')">-</button>
-            <button class="btn" onclick="appendToResult('1')">1</button>
-            <button class="btn" onclick="appendToResult('2')">2</button>
-            <button class="btn" onclick="appendToResult('3')">3</button>
-            <button class="btn" style="color: cyan;" onclick="appendToResult('+')">+</button>
-            <button class="btn" onclick="appendToResult('00')">00</button>
-            <button class="btn" onclick="appendToResult('0')">0</button>
-            <button class="btn" onclick="appendToResult('.')">.</button>
-            <button class="btn" style="color: hsl(13, 100%, 50%);" onclick="calculateResult()">=</button>
+    <header>
+        <div class="navBar" id="aboutMe">
+                <div class="name">
+                    <img class="logo" src="school-logo.png">
+                      <h2>Wisdom Zone</h2>
+                      <p class="medium">English Medium School</p>
+                </div>
+                <a class="border" href="#home">Home</a>
+                <a class="border" href="#aboutMe">About Us</a>
+            <div class="list">
+                    <div class="dropdown-course">
+                        <a class="border" href="#courseID">Courses</a>
+                        <div class="drop-content">
+                            <a href="#">1 to 8th</a>
+                            <a href="#">10th</a>
+                            <a href="#">12th Mathematics</a>
+                            <a href="#">12th Biology</a>
+                            <a href="#">12th Commerce</a>
+                        </div>
+                    </div>
+            </div>
+            <a class="border" href="#admissionOpen">Admissions</a>
+            <a class="border" href="#contactMe">Contact Us</a>
         </div>
+    </header>
+    <div class="image" id="home">
+        <img class="img1" src="https://img.freepik.com/free-photo/positive-female-school-teacher-watching-kids-doing-their-task-class-sitting-desks-drawing-writing-copybooks_74855-16430.jpg?w=900&t=st=1694147812~exp=1694148412~hmac=c2d56ff3e23da0439fc5372953e87dab78db6d39b3260c5392262d8381cf87d1">
+        <img class="img2" src="https://img.freepik.com/free-vector/high-school-concept-illustration_114360-8279.jpg?w=900&t=st=1694148993~exp=1694149593~hmac=48945afc849d159fa22c9d787737bdaa729ef9fa2ba2c82d7736978e1c8fce13">
+        <!-- <img class="img2" src="https://img.freepik.com/premium-vector/school-building-empty-front-yard-with-green-trees-road-crosswalk-summer-cityscape-background_48369-37782.jpg?w=1380"> -->
+        <!-- <img class="img2" src="https://img.freepik.com/free-vector/eeducational-background-with-university-building_1441-840.jpg?w=1380&t=st=1694149404~exp=1694150004~hmac=c5b3d6fb6b983d641a9ea2e0d78c9c2fca47f7028bb092f884760c40905c7cdd"> -->
     </div>
-    <script src="script.js"></script>
+        <div class="admission">
+            <h2 style="margin-left: 500px; color: white;">Admission 2023-24</h2>
+            <!-- <hr> -->
+            <div class="application" id="courseID">
+                <h4 style="margin-left: 372px; color: coral;">Classes</h4>
+                <li class="adm-item">
+                    <a>Class 1 to 8th</a>
+                </li>
+                <li class="adm-item">
+                    <a>10th</a>
+                </li>
+                <li class="adm-item">
+                    <a>12th Mathmatics</a>
+                </li>
+                <li class="adm-item">
+                    <a>12th Biology</a>
+                </li>
+                <li class="adm-item">
+                    <a>12th Commerce</a>
+                </li>
+            </div>
+            <div class="registration">
+                <form name="formSubmit1" class="form-reg">
+                        <h3>Register for Admission</h3>
+                        <h5>First Name : <input type="text"></h5>
+                        <h5>Last Name :  <input type="text"></h5>
+                        <h5>DOB : <input style="cursor: pointer;" type="date"></h5>
+                        <h5>Mobile No. : <input type="number" name="mobile" id="mobile" placeholder="+91 XXXXXXXXXX"></h5>
+                        <h5>E-mail : <input type="text" placeholder="xyz@gmail.com"></h5>
+                    <div class="choice">
+                        <h5>Select Course : 
+                            <select name="1 to 8th">
+                                <option value="medium">1 to 8th</option>
+                                <option value="10th">10th</option>
+                                <option value="12th">12th Mathematics</option>
+                                <option value="12th">12th Biology</option>
+                                <option value="12th">12th Commerce</option>
+                            </select>
+                        </h5>
+                    </div>
+                </form>
+                <button class="button-submit1" onclick="myFunction1()">Submit</button>
+                        <p id="demo" style="color: rgb(55, 223, 55); margin-left: 10px;"></p>
+            </div>
+            <div class="regImg">
+                <img class="regimg" src="https://img.freepik.com/premium-photo/online-application-form-modish-registration_31965-44412.jpg?w=900">
+            </div>
+            
+            <hr style="margin-top: 42px;">
+            <div class="entrance">
+                <h2 style="margin-left: 400px; color: white;">Entrance Registration for 9th and 11th</h2>
+                <h4 style="margin-left: 30px; color: red;">Eligibility Criteria</h4>
+                <p><li>Should be passed with minimum 70% grade in 8th standard for admission in 9th standard.</li>
+                    <li>Should be passed with minimum 65% grade in 10th board for admission in 11th standard.</li>
+                </p>
+                <div class="eduImage">
+                    
+                    <img class="imageKids" src="edu.png">
+                    <h2 class="edu-h2">ADMISSION OPEN
+                        <p style="margin-left: 90px;">at</p>
+                        <h2 class="board">WISDOM ZONE</h2>
+                    </h2>
+                </div>
+                <form name="formSubmit2" class="entrance-exam" id="admissionOpen">
+                    <h5>First Name : <input type="text" id="name" name="name"></h5>
+                    <h5>Last Name : <input type="text" id="name" name="name"></h5>
+                    <h5>Mobile no. : <input type="number" placeholder="+91 XXXXXXXXXX"></h5>
+                    <h5>E-mail : <input type="email" id="email" name="email" placeholder="xyz@gmail.com"></h5>
+                    <h5>Select Class :
+                    <select name="select" id="select">
+                        <option value="9th">9th</option>
+                        <option value="11th">11th</option>
+                    </select>
+                    </h5>
+                    <h5>Board : 
+                        <input type="text" name="board">
+                    </h5>
+                    <h5>DOB : <input type="date"></h5>
+                    <h5>Percentage % : <input type="number"></h5>
+                    <p style="margin-top: 15px; margin-left: 40px; color: rgb(234, 164, 164);">If appliying for 11th standard please select subject!</p>
+                    <h5>Select Subject :
+                    <select >
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Commerce">Commerce</option>
+                    </select>
+                    </h5>
+                    <h5>Address : <input type="text"></h5>
+                    <h5>Pin Code : <input type="number" placeholder="xyz abc"></h5>
+                    <h5>District : <input type="text"></h5>
+                    <h5>State : <input type="text"></h5>
+                    <div class="upload-photo">
+                        <h5>Upload Your Latest Photo</h5>
+                        <input class="ChooseFile" type="file" id="image-upload" accept="image/*" onchange="previewImage(event)">
+                        <img class="imagePreview" id="image-preview" src="#" alt="Image Preview" style="display: none;">
+                    </div>
+                    <p id="demo1" style="color: rgb(55, 223, 55); margin-left: 40px; margin-top: 10px;"></p>
+                </form>
+                <button class="button-submit2"  onclick="myFunction2()">Submit</button>
+            </div>
+        </div>
+        <div class="contact-dev" id="contactMe">
+            <h2 style="margin-left: 580px;">Contact Us</h2>
+            <div class="contact-me">
+                <p>E-mail : vivekvddv408@gmail.com</p>
+                <p>Mobile no. 1: +91 9648376757</p>
+                <p>Mobile no. 2: +91 8960967590</p>
+                <p>Address : Mariahu Jaunpur Uttar Pradesh 222162</p>
+                <p>School Timing : 8:00 AM - 4:00 PM</p>
+            </div>
+            <div class="developer">
+                <p>[Developed by @Vivekdeep (Vivek Vishwakarma)]</p>
+            </div>
+            <div class="contact-box">
+                <div class="emailPhone">
+                    <p><img class="liLogo1" src="https://www.freeiconspng.com/uploads/email-icon--100-flat-vol-2-iconset--graphicloads-18.png"> <a style="text-decoration: none; color: white;">vivekvddv408@gmail.com</a></p>
+                    <p style="color: white;"><img class="liLogo2" src="https://www.freeiconspng.com/uploads/viber-phone-logo-and-white-background-pictures-6.png"> <p style="margin-top: -8px; margin-left: 30px;">+91 9648376757</p></p>
+                </div>
+                <div class="gitLink">
+                    <a href="https://www.linkedin.com/in/vivek-vishwakarma-520159240/"><img class="liLogo3 liLogo" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"></a>
+                    <a href="https://github.com/Vivekdeep4?tab=repositories"><img class="liLogo4 liLogo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function previewImage(event) {
+            var input = event.target;
+            var preview = document.getElementById('image-preview');
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            };
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                preview.style.display = 'none';
+            }
+        }
+        function myFunction1(){
+            document.getElementById("demo").innerHTML ="Form Submitted Successfuly!";
+            document.formSubmit1.reset();
+        }
+        function myFunction2(){
+            document.getElementById("demo1").innerHTML ="Form Submitted Successfuly!";
+            document.formSubmit2.reset();
+        }
+
+        </script>
 </body>
 </html>
